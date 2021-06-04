@@ -1,0 +1,23 @@
+/*    Programs on Logical AND,OR operator and Logical NOT   */
+
+import java.util.Scanner;
+public class Main
+{
+    
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    System.out.println("Enter True or False in lower cases");
+	    boolean a=sc.nextBoolean();
+	    boolean b =sc.nextBoolean();
+	    
+	    // Logical AND
+	    
+	    if(a&b)
+	     System.out.println("Logical AND");
+	     
+	    if(a || b)
+	      System.out.println("Logical OR");
+	    if(!b)
+	      System.out.println("Logical NOT");
+	}
+}
