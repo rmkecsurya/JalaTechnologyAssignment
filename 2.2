@@ -1,0 +1,25 @@
+/* Write a method for increment and decrement operators(++, --) */
+
+import java.util.Scanner;
+public class Main
+{
+    
+	public static void main(String[] args) {
+		Main m = new Main();
+		Scanner sc = new Scanner(System.in);
+		int a= sc.nextInt();
+		int b = sc.nextInt();
+		int aInc = m.increment(a);
+		int bDec = m.decrement(b);
+		System.out.println("A Value before increment is "+a+" A Value after increment is "+aInc );
+		System.out.println("B Value before increment is "+b+" B Value after increment is "+bDec );
+		
+	}
+	public int increment(int a){
+	    return a+=1;
+	}
+	
+	public int decrement(int b){
+	    return b+=1;
+	}
+}
