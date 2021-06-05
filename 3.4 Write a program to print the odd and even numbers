@@ -1,0 +1,16 @@
+/* Write a program to print the odd and even numbers.    */
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    System.out.println("Enter the Numbers");
+	    int n=sc.nextInt();
+	    if(n%2==0)
+	      System.out.println("Even Number....");
+	    if(n%2!=0)
+	      System.out.println("Odd Number....");
+	}
+}
