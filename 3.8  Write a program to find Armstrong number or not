@@ -1,0 +1,22 @@
+/*     */
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    System.out.println("Enter the number");
+	    int n=sc.nextInt();
+	    int res =0,temp=n;
+	    while(n>0){
+	        int r = n%10;
+	        res+=Math.pow(r,3);
+	        n/=10;
+	    }
+	    if(res==temp)
+	      System.out.println("Armstrong Number");
+	    else
+	      System.out.println("Not a Armstring number");
+	}
+}
